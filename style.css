@@ -1,0 +1,114 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-wrap: wrap ;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-color: #d1e4f7;
+}
+header, footer{
+    display: flex;
+    margin: 3px;
+    background: #a1a1a1 ;
+
+}
+
+header{
+    flex: 1 1 100vw;
+    height: 300px;
+    background-image: url(/assets/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 0%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: -1;  /* Certificando-se de que a camada fique atrás do conteúdo */ 
+
+}
+
+
+nav{
+    flex: 1 1 100px;
+    padding-top: 20px;
+   
+    
+
+
+}
+
+main{
+    margin: 3px;
+    flex: 1 1 600px;
+    height: calc(100vh - 240px);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-left: 20px;
+  
+}
+
+main h4{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+main article p{
+    font-family: Arial;
+    font-size: 18px;
+    width: 95%;
+    text-indent: 20px;
+}
+
+
+
+aside{
+    flex: 1 1 85px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cadef3;
+    padding-left: 15px;
+    
+    
+}
+aside h2{
+    font-size: 27px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+aside h3{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+footer{
+    flex: 1 1 100vw;
+    height: 70px;
+    background-color: #50524c;
+}
+footer > p {
+margin: auto;
+color: aliceblue;
+}
+
+@media only screen and (max-windth: 1075px){
+ main{
+    height: calc(100vh - 330px);
+ }
+ aside{
+    flex: 1 1 100vh;
+    height: 100px;
+ }
+@media only screen and (max-windth:717px) {
+    nav{
+        height: 100px;
+    }
+    main{
+        height: calc(100vh - 436px);
+    }
+}
+
+}
