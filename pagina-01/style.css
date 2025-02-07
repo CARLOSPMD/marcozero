@@ -20,7 +20,10 @@ h4 strong{
 footer{
     display: flex;
     margin: 3px;
-    background: #a1a1a1;
+    flex: 1 1 100vw;
+    height: 70px;
+    background-color: #50524c;
+    margin: 0;
 
 }
 
@@ -36,8 +39,10 @@ header{
 }
 
 nav{
-    flex: 1 1 100px;
+    flex: 1 1 0px;
     padding-top: 20px;
+    margin-bottom: 0;
+    height: max-content;
 }
 
 main{
@@ -47,6 +52,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 20px;
     padding-left: 20px;
+    
   
 }
 
@@ -69,6 +75,7 @@ aside{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #cadef3;
     padding-left: 15px;
+    height: max-content;
 }
 
 a{
@@ -85,12 +92,22 @@ aside h3{
     padding-bottom: 10px;
 
 }
-
-footer{
-    flex: 1 1 100vw;
-    height: 70px;
-    background-color: #50524c;
+main a{
+    display: flex;
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+    border: solid 2px #060801;
+    font-weight: 500;
+    padding: 5px;
+    width: 150px;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgb(155, 78, 33);
+    border-radius: 10px;
 }
+
+
+
 footer > p {
 margin: auto;
 color: aliceblue;
